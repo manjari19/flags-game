@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flags Matching Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Start Screen -->
+    <div class="start-screen">
+      <h1>Flags Matching Game</h1>
+      <p class="instructions">
+        Drag and drop the correct flag onto its corresponding country name.
+        Each correct match gives you 10 points. Complete all rounds to finish the game.
+      </p>
+      <label for="questionCount">Enter the number of rounds:</label>
+      <input type="number" id="questionCount" min="1" max="10" value="5" />
+      <button id="startGame">Start</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div class="game-screen hide">
+      <div class="score-container">
+        <h2>Score: <span id="score">0</span></h2>
+      </div>
+      <h3 id="question-title"></h3>
+      <div class="draggable-objects"></div>
+      <div class="drop-points"></div>
+      <button id="next-question" class="hide">Next</button>
+      <button id="restart-game" class="restart-button">Restart</button> <!-- Restart Anytime -->
+    </div>
+
+    <!-- End Screen -->
+    <div class="end-screen hide">
+      <h1>Game Over!</h1>
+      <p>Your Final Score: <span id="final-score"></span></p>
+      <button id="restart">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
