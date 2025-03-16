@@ -111,7 +111,7 @@ body::before {
 /* Start Button */
 .start-screen button {
   padding: 12px 20px;
-  font-size: 1.3em;
+  font-size: 3.5em;
   font-weight: bold;
   font-family: "Unicorn", sans-serif;
   border: none;
@@ -301,7 +301,7 @@ img {
 /* Play Again Button */
 #restart-game {
   padding: 16px 30px;
-  font-size: 1.4em;
+  font-size: 1.8em;
   font-family: "Unicorn", sans-serif;
   border: none;
   background-color: white;
